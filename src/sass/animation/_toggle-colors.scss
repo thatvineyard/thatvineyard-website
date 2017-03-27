@@ -1,0 +1,27 @@
+// Variables
+$color-one: $color-fg-primary;
+$color-two: $color-fg-secondary;
+
+// Animation
+
+@keyframes toggle-colors {
+    0% {fill: $color-one; }
+    49% {fill: $color-one; }
+    50% {fill: $color-two; }
+    100% {fill: $color-two; }
+}
+
+.anim-toggle-colors-all {
+    fill: $color-one;
+    animation: toggle-colors 1s 0s linear infinite;
+}
+
+.anim-toggle-colors-one {
+    fill: $color-one;
+    animation: toggle-colors 1s 0s linear infinite;
+}
+
+.anim-toggle-colors-two {
+    fill: $color-two;
+    animation: toggle-colors 1s 0.5s linear infinite;
+}

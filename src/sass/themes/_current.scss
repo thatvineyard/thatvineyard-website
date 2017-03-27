@@ -1,0 +1,29 @@
+// Foreground colors
+
+$color-fg-primary: #ED3024;	// Soup can red
+$color-fg-secondary: #BE1E2D;   // Bloodshot red
+$color-fg-tertiary: #495664;    // Steel blue
+
+// Background colors
+
+$color-bg-primary: #141E30;
+$color-bg-secondary: #243B55;
+
+svg {
+    .color-fg-primary {
+	fill: $color-fg-primary;
+    }
+    .color-fg-secondary {
+	fill: $color-fg-secondary;
+    }
+}
+
+p, h1, h2, h3 {
+    .color-fg-primary {
+	color: $color-fg-primary;
+    }
+
+    .color-fg-secondary {
+	color: $color-fg-secondary;
+    }
+}

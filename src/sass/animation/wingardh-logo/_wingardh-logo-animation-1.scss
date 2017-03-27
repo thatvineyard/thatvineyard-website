@@ -1,0 +1,53 @@
+@import 'colors';
+
+@keyframes hideshow {
+    0% { opacity: 1; }
+    10% { opacity: 1; }
+    15% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+.color-primary {
+    fill: $color-fg-primary;
+}
+
+.color-secondary {
+    fill: $color-fg-secondary;
+}
+
+#wingardh-logo {
+    -webkit-filter: drop-shadow(-10px -10px 5px #000);
+    filter: drop-shadow(-10px -10px 5px #000);
+}
+
+#wingardh-logo-1 {
+    animation: hideshow 1.5s 1s ease infinite;
+}
+
+#wingardh-logo-2 {
+    animation: hideshow 1.53s 1s ease infinite;
+}
+
+#wingardh-logo-3 {
+    animation: hideshow 1.56s 1s ease infinite;
+}
+
+#wingardh-logo-4 {
+    animation: hideshow 1.59s 1s ease infinite;
+}
+
+#wingardh-logo-5 {
+    animation: hideshow 1.62s 1s ease infinite;
+}
+
+#wingardh-logo-6 {
+    animation: hideshow 1.65s 1s ease infinite;
+}
+
+#wingardh-logo-7 {
+    animation: hideshow 1.68s 1s ease infinite;
+}
+
+#wingardh-logo-8 {
+    animation: hideshow 1.71s 1s ease infinite;
+}

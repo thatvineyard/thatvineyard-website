@@ -1,0 +1,42 @@
+@import 'themes/_current';
+@import 'layout/container';
+@import 'layout/spacer';
+@import 'layout/aspect-ratio';
+@import 'layout/keywords';
+
+//@import 'animation/wingardh-logo/wingardh-logo-static';
+//@import 'animation/wingardh-logo/wingardh-logo-animation-1';
+//@import 'animation/wingardh-logo/wingardh-logo-animation-2';
+//@import 'animation/wingardh-logo/wingardh-logo-animation-3';
+//@import 'animation/wingardh-logo/wingardh-logo-animation-4';
+@import 'animation/neon-light';
+@import 'animation/wave';
+@import 'animation/draw-in';
+@import 'animation/toggle-colors';
+
+html {
+
+}
+
+
+body {
+    margin: 0;
+    background-repeat: repeat;
+    background-attachment: local;
+
+    background: $color-fg-primary; /* unsupported */
+    background: -webkit-linear-gradient($color-bg-primary, $color-bg-secondary); /* safari */
+    background: -o-linear-gradient($color-bg-primary, $color-bg-secondary); /* opera */
+    background: -moz-linear-gradient($color-bg-primary, $color-bg-secondary); /* firefox */
+    background: linear-gradient($color-bg-primary, $color-bg-secondary); /* regular */
+}
+
+
+#banner {
+    text-align: center;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 70px;
+    font-size: 3vmin;
+    color: $color-fg-primary;
+    text-shadow: 2px 2px $color-fg-secondary;
+}

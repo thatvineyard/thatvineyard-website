@@ -1,0 +1,22 @@
+// Variables
+$color-static: $color-fg-tertiary;
+$color-wave: $color-fg-primary;
+
+// Animation
+
+@keyframes wave {
+    from {fill: $color-wave;}
+    to {fill: $color-static;}
+}
+
+// Class
+
+.anim-wave-all {
+    fill: $color-static;
+}
+
+@for $i from 1 through 8 {
+    .anim-wave-#{$i} {
+	animation: wave #{0.8 + $i / 50}s 0s ease infinite;
+    }
+}

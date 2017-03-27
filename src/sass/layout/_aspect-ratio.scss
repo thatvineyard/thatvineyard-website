@@ -1,0 +1,52 @@
+// .sixteenbynine-wrapper {
+//   width: 50%;
+//   display: inline-block;
+//   position: relative;
+// }
+
+
+// .sixteenbynine-wrapper::after {
+//     content: "afterafter";
+//     padding-top: 56%;
+//     display: block;
+//     background-color: yellow;
+// }
+
+// .sixteenbynine-inside {
+//     position: absolute;
+//     top: 0;
+//     bottom: 0;
+//     left: 0;
+//     right: 0;
+//     background-color: blue;
+//     color: white;
+// }
+
+
+.sixteenbynine {
+    width: 100%;
+    &:before {
+    	content: "";
+    	float: left;
+    	padding-bottom: 56%;
+    }
+    &:after {
+    	content: "";
+    	display: table;
+    	clear: both;
+    }
+}
+
+.tenbythree {
+    width: 100%;
+    &:before {
+    	content: "";
+    	float: left;
+    	padding-bottom: 30%;
+    }
+    &:after {
+    	content: "";
+    	display: table;
+    	clear: both;
+    }
+}
