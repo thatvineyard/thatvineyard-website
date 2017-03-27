@@ -1,0 +1,32 @@
+<svg id="wingardh-logo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     width="100%" viewBox="0 0 1000 600" enable-background="new 0 0 1000 348" xml:space="preserve">
+
+  <!-- whole logo -->
+  <g>
+    
+    <!-- left bar -->
+    <rect y="0" width="43" height="348" id="wingardh-logo-1" class="bar-piece color-fg-primary"/>
+
+    <!-- left box -->
+    <g id="wingardh-logo-box-1">
+      <polygon points="87,0     87,348  304,0   87,0" id="wingardh-logo-2" class="top-piece color-fg-secondary"/>
+      <polygon points="304,348  304,0   87,348  304,348" id="wingardh-logo-3" class="bottom-piece color-fg-primary"/>    
+      
+    <!-- middle box -->
+    <g id="wingardh-logo-box-1">
+      <polygon points="500,0    391,174  391,0" id="wingardh-logo-4" class="top-piece color-fg-secondary"/>
+      <polygon points="609,348  609,0    391,348, 609,348" id="wingardh-logo-5" class="bottom-piece color-fg-primary"/>
+    </g>
+
+    <!-- right box -->
+    <g id="wingardh-logo-box-1">
+      <polygon points="804,0    696,174  696,0" id="wingardh-logo-6" class="top-piece color-fg-secondary"/>
+      <polygon points="913,348  913,0    696,348 913,348" id="wingardh-logo-7" class="bottom-piece color-fg-primary"/>
+    
+    </g>
+
+    <!-- right bar -->
+    <rect x="956" width="43" height="348" id="wingardh-logo-8" class="bar-piece color-fg-primary"/>
+
+  </g>
+</svg>
