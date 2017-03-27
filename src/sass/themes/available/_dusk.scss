@@ -6,5 +6,25 @@ $color-fg-tertiary: #495664;    // Steel blue
 
 // Background colors
 
-$color-bg-primary: #97b6cc;
-$color-bg-secondary: #93b6cc;
+$color-bg-primary: #243B55;
+$color-bg-secondary: #141E30;
+$color-bg-tertiary: #ccdfff;
+
+svg {
+    .color-fg-primary {
+	fill: $color-fg-primary;
+    }
+    .color-fg-secondary {
+	fill: $color-fg-secondary;
+    }
+}
+
+p, h1, h2, h3 {
+    .color-fg-primary {
+	color: $color-fg-primary;
+    }
+
+    .color-fg-secondary {
+	color: $color-fg-secondary;
+    }
+}
