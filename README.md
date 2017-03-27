@@ -4,8 +4,8 @@
 
 ### Requirements
 
--sassc
--Other sass-compiler
+* sassc
+* Other sass-compiler
 
 ### Quick guide
 
