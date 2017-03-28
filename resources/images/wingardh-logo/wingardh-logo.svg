@@ -1,5 +1,5 @@
-<svg id="wingardh-logo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-     width="100%" viewBox="0 0 1000 600" enable-background="new 0 0 1000 348" xml:space="preserve">
+<svg id="wingardh-logo" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     width="100%" viewBox="0 0 1000 348" enable-background="new 0 0 1000 348" xml:space="preserve">
 
   <!-- whole logo -->
   <g>
@@ -28,5 +28,6 @@
     <!-- right bar -->
     <rect x="956" width="43" height="348" id="wingardh-logo-8" class="bar-piece color-fg-primary"/>
 
+    </g>
   </g>
 </svg>
