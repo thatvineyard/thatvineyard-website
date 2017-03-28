@@ -1,0 +1,38 @@
+$num-pieces: 8;
+$start-size: 0.9;
+
+@keyframes blast-apart-fade {
+    0% {opacity: 1; }
+    30% { fill: white; opacity: 0.8; transform: scale($start-size, $start-size);}
+    100% { opacity: 0; transform: scale(1.5, 1.5); }
+}
+
+@keyframes blast-apart {
+    0% { transform: scale($start-size, $start-size); }
+    1% { transform: scale(#{$start-size - 0.001}, #{$start-size - 0.001}); }
+    100% { transform: scale(1, 1); }
+}
+
+@keyframes blast-apart-center {
+    0% { transform: translate(#{(1 - $start-size) * 50%}, #{(1 - $start-size) * 50%}); }
+    100% { transform: translate(0%, 0%); }
+}
+
+@for $i from 1 through $num-pieces {
+    .anim-blast-apart-fade-#{$i} {
+	//	transform-origin: center center;
+	transform: scale($start-size, $start-size);
+	animation: blast-apart-fade 0.3s #{($i / 10) + 1}s cubic-bezier(0, 0.8, 0.1, 1) forwards
+    }
+    .anim-blast-apart-#{$i} {
+	transform: scale($start-size, $start-size);
+	animation: blast-apart 4s #{($i / 10) + 1.02}s cubic-bezier(0, 0.8, 0.1, 1) forwards
+    }
+}
+
+.anim-blast-apart {
+    fill: $color-fg-primary;
+    transform: translate(#{(1 - $start-size) * 50%}, #{(1 - $start-size) * 50%});
+    animation: blast-apart-center 2s 1.12s ease-out forwards;
+}
+
