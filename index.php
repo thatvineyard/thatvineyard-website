@@ -29,7 +29,7 @@
 	<div id="title-card" class="container-2 sixteenbynine centered">
 	    <div id="logo" class="sixteenbynine">
 		<?php
-		switch(rand(1, 7)) {
+		switch(rand(1, 9)) {
 		    case 1:
 			include("resources/images/wingardh-logo/wingardh-logo-blast-apart.svg");
 			break;
@@ -48,11 +48,25 @@
 		    case 6:
 		?>
 		    <video autoplay="autoplay" muted="muted" preload="auto" loop="loop" style="width: 100%; -webkit-mask-box-image: url(resources/images/wingardh-logo/wingardh-logo.svg) 100% 0% 0% 0%;">
-			<source src="resources/videos/light-effects-animation.mp4" type="video/mp4">
+			<source src="http://mazwai.com/system/posts/videos/000/000/100/original/paolo_forti--luci_ombre_e_convezione.mp4?1409796025" type="video/mp4">
 		    </video>
 		    <?php
 		    break;
-		    default:
+				    case 7:
+		?>
+		    <video autoplay="autoplay" muted="muted" preload="auto" loop="loop" style="width: 100%; -webkit-mask-box-image: url(resources/images/wingardh-logo/wingardh-logo.svg) 100% 0% 0% 0%;">
+			<source src="http://mazwai.com/system/posts/videos/000/000/170/original/tom_poederbach--las_vegas_blvd_copy_for_vimeo_by_philip_bloom.mp4?1429600066" type="video/mp4">
+		    </video>
+		    <?php
+		    break;
+		    case 8:
+		?>
+		    <video autoplay="autoplay" muted="muted" preload="auto" loop="loop" style="width: 100%; -webkit-mask-box-image: url(resources/images/wingardh-logo/wingardh-logo.svg) 100% 0% 0% 0%;">
+			<source src="http://mazwai.com/system/posts/videos/000/000/221/original/discovery_part_II-jonathan_mitchell.mp4?1461020357" type="video/mp4">
+		    </video>
+		    <?php
+		    break;
+default:
 		    include("resources/images/wingardh-logo/wingardh-logo.svg");
 		    }
 		    ?>
