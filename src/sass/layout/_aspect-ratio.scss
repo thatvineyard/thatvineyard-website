@@ -25,6 +25,7 @@
 
 .sixteenbynine {
     width: 100%;
+    box-sizing: border-box;
     &:before {
     	content: "";
     	float: left;
@@ -39,6 +40,7 @@
 
 .tenbythree {
     width: 100%;
+    box-sizing: border-box;
     &:before {
     	content: "";
     	float: left;

@@ -11,3 +11,16 @@ p {
 .full-page {
     height: 100%;
 }
+
+.half-page {
+    height: 50%;
+}
+
+.stack {
+    position: relative;
+}
+
+.stack-object {
+    position: absolute;
+    top: 0;
+}
