@@ -4,16 +4,13 @@
 @import 'layout/aspect-ratio';
 @import 'layout/keywords';
 @import 'layout/navbar';
+@import 'layout/bar';
 
-//@import 'animation/wingardh-logo/wingardh-logo-static';
-//@import 'animation/wingardh-logo/wingardh-logo-animation-1';
-//@import 'animation/wingardh-logo/wingardh-logo-animation-2';
-//@import 'animation/wingardh-logo/wingardh-logo-animation-3';
-//@import 'animation/wingardh-logo/wingardh-logo-animation-4';
 @import 'animation/neon-light';
 @import 'animation/wave';
 @import 'animation/draw-in';
 @import 'animation/toggle-colors';
+@import 'animation/blast-apart';
 
 html {
 
@@ -21,13 +18,13 @@ html {
 
 
 body {
-    font-family: 'Acrhivo Black', sans-serif;
+    font-family: #{$font-body};
 
     margin: 0;
     background-repeat: repeat;
     background-attachment: local;
 
-    background: $color-fg-primary; /* unsupported */
+    background: $color-bg-primary; /* unsupported */
     background: -webkit-linear-gradient($color-bg-primary, $color-bg-secondary); /* safari */
     background: -o-linear-gradient($color-bg-primary, $color-bg-secondary); /* opera */
     background: -moz-linear-gradient($color-bg-primary, $color-bg-secondary); /* firefox */
@@ -35,14 +32,22 @@ body {
 }
 
 #title-card {
-
+    min-width: 350px;
 }
 
 #banner {
     text-align: center;
-    font-family: 'Archivo Black', sans-serif;
+    min-width: 250px;
+    & h1 {
+    font-family: #{$font-title};
     font-size: 70px;
-    font-size: 3vmin;
-    color: $color-fg-primary;
-    text-shadow: 2px 2px $color-fg-secondary;
+    font-size: calc(20px + 2vmin);
+    color: $color-fg-secondary;
+    text-shadow: 2px 2px $color-fg-secondary-darkest;
+    }
+}
+
+#body {
+    background: $color-fg-tertiary-lightest;
+    bottom: 0px;
 }
