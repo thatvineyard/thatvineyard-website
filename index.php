@@ -29,7 +29,7 @@
 	<div id="title-card" class="container-2 sixteenbynine centered">
 	    <div id="logo" class="sixteenbynine">
 		<?php
-		switch(rand(6, 7)) {
+		switch(rand(1, 7)) {
 		    case 1:
 			include("resources/images/wingardh-logo/wingardh-logo-blast-apart.svg");
 			break;
