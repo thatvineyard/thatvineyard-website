@@ -1,3 +1,8 @@
+//--------//
+// colors //
+//--------//
+
+//
 // Foreground colors
 
 // Soup can red
@@ -9,45 +14,56 @@ $color-fg-primary-dark: #d41e11;        // 45%
 $color-fg-primary-darker: #a5180d;      // 35%
 $color-fg-primary-darkest: 2f0704;      // 10%
 
-$color-fg-secondary: #BE1E2D;   // Bloodshot red
+// Bloodshot red (NOT FINISHED)
+$color-fg-secondary: #BE1E2D;           // ?%
 $color-fg-secondary-light: #f04e42;	// 60%
 $color-fg-secondary-lighter: #f47a71;	// 70%
 $color-fg-secondary-lightest: #fbd3d0;	// 90%
-$color-fg-secondary-dark: #d41e11;        // 45%
-$color-fg-secondary-darker: #a5180d;      // 35%
-$color-fg-secondary-darkest: 2f0704;      // 10%
-
+$color-fg-secondary-dark: #d41e11;      // 45%
+$color-fg-secondary-darker: #a5180d;    // 35%
+$color-fg-secondary-darkest: 2f0704;    // 10%
 
 // Turmeric yellow
-$color-fg-tertiary: #e0a021;          // 50%
-$color-fg-tertiary-light: #e9bc63;    // 65%
-$color-fg-tertiary-lighter: #efcf8f;  // 75%
-$color-fg-tertiary-lightest: #f9ecd2; // 90%
-$color-fg-tertiary-dark: #b38019;     // 40%
-$color-fg-tertiary-darker: #705010;   // 25%
-$color-fg-tertiary-darkest: #2d2006;  // 10%
+$color-fg-tertiary: #e0a021;            // 50%
+$color-fg-tertiary-light: #e9bc63;      // 65%
+$color-fg-tertiary-lighter: #efcf8f;    // 75%
+$color-fg-tertiary-lightest: #f9ecd2;   // 90%
+$color-fg-tertiary-dark: #b38019;       // 40%
+$color-fg-tertiary-darker: #705010;     // 25%
+$color-fg-tertiary-darkest: #2d2006;    // 10%
 
-$color-fg-quatrenary: #d7d788;  // Sanstone yellow
+// Sandstone yellow (NOT FINISHED)
+$color-fg-quatrenary: #d7d788; 
+$color-fg-quatrenary-light: #e9bc63;    // 65%
+$color-fg-quatrenary-lighter: #efcf8f;  // 75%
+$color-fg-quatrenary-lightest: #f9ecd2; // 90%
+$color-fg-quatrenary-dark: #b38019;     // 40%
+$color-fg-quatrenary-darker: #705010;   // 25%
+$color-fg-quatrenary-darkest: #2d2006;  // 10%
+
 // Steel blue
-$color-fg-quinary: #145366;           // 24%
-$color-fg-quinary-light: #1d7995;     // 35%
-$color-fg-quinary-lighter: #228aaa;   // 40%
-$color-fg-quinary-lightest: #2aadd5;  // 50%
-$color-fg-quinary-dark: #0d3440;      // 15%
-$color-fg-quinary-darker: #08232b;    // 10%
-$color-fg-quinary-darkest: #041115;   // 5%
+$color-fg-quinary: #145366;             // 24%
+$color-fg-quinary-light: #1d7995;       // 35%
+$color-fg-quinary-lighter: #228aaa;     // 40%
+$color-fg-quinary-lightest: #2aadd5;    // 50%
+$color-fg-quinary-dark: #0d3440;        // 15%
+$color-fg-quinary-darker: #08232b;      // 10%
+$color-fg-quinary-darkest: #041115;     // 5%
+
 // $color-fg-septenary:
 // $color-fg-octonary:
 // $color-fg-nonary:
 // $color-fg-decenary:
 
-
+//
 // Background colors
 
 $color-bg-primary: $color-fg-quinary-darker;
 $color-bg-secondary: $color-fg-quinary-darkest;
 $color-bg-tertiary: $color-fg-primary-darkest;
 
+// Color application
+  
 svg {
     .color-fg-primary {
 	fill: $color-fg-primary;
@@ -78,14 +94,23 @@ p, h1, h2, h3 {
     }
 }
 
-
-// Font
+//-------//
+// Fonts //
+//-------//
+  
 // Font one: Archivo Black.
-// 
+// Google font. Wide. 
+@import url("https://fonts.googleapis.com/css?family=Archivo+Black");
 $font-one: 'Archivo Black';
 $font-one-variant: 'Archivo Narrow';
+
+// Font two: Roboto.
+// Google font. Thin.
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 $font-two: 'Roboto';
 //$font-two-variant: 'xxxx';
+
+// Font declarations
 $font-title: $font-one + ", sans-serif";
 $font-header: $font-one-variant + ", sans-serif";
 // $font-header-variant: $font-one + ", sans-serif";
@@ -94,6 +119,8 @@ $font-body: $font-two + ", sans-serif";
 // $font-body-sans: 
 // $font-body-serif:
 
+// Font application
+  
 body {
     font-family: #{$font-body};
      font-size: 14px;

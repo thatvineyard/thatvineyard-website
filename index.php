@@ -1,7 +1,5 @@
 <head>
     <link href="resources/css/style.css" rel="stylesheet" type="text/css" media="screen">
-    <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 
 <body>
