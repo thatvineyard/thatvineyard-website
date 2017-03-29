@@ -23,7 +23,7 @@ SASS_SOURCE_DIR = src/sass/
 SASS_MAIN = main.scss
 SASS_SOURCES := $(shell find $(SASS_SOURCE_DIR) -name '*.scss')
 SASS_SOURCEMAP_FLAG = -m
-SASS_OUTPUT_FILE = style.css
+SASS_OUTPUT_FILE = resources/css/style.css
 
 ###########
 # Recipes #
