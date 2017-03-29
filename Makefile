@@ -43,18 +43,42 @@ SASS_OUTPUT_FILE = resources/css/style.css
 css: $(SASS_OUTPUT_FILE)
 
 $(SASS_OUTPUT_FILE): $(SASS_SOURCE_DIR)$(SASS_MAIN) $(SASS_SOURCES)
-	@$(MSG) "Renaming old css file ($(SASS_OUTPUT_FILE) to .$(SASS_OUTPUT_FILE)_old)"
-	-@mv $(SASS_OUTPUT_FILE) .$(SASS_OUTPUT_FILE)_old
+
+# Back-up old file and check directory
+	@$(MSG) "Checking if $(dir $(SASS_OUTPUT_FILE)) exists"
+	@if [ ! -d $(dir $(SASS_OUTPUT_FILE)) ] ; then \
+		$(MSG) "$(dir $(SASS_OUTPUT_FILE)) doesn't exist, creating now"; \
+		mkdir $(dir $(SASS_OUTPUT_FILE)); \
+	else \
+		$(MSG) "$(dir $(SASS_OUTPUT_FILE)) exists!" ; \
+	fi
+	@if [ ! -f $(SASS_OUTPUT_FILE) ] ; then \
+		$(MSG) "$(SASS_OUTPUT_FILE) doesn't exist"; \
+	else \
+		$(MSG) "Renaming old css file ($(SASS_OUTPUT_FILE) to $(dir $(SASS_OUTPUT_FILE)).$(notdir $(SASS_OUTPUT_FILE))_old)"; \
+		mv $(SASS_OUTPUT_FILE) $(dir $(SASS_OUTPUT_FILE)).$(notdir $(SASS_OUTPUT_FILE))_old; \
+	fi
+
+# Compiling css file
 	@$(MSG) "Building new css file ($(SASS_OUTPUT_FILE))"
 	-@$(SASS_C)$(SASS_C_FLAGS) $(SASS_SOURCE_DIR)$(SASS_MAIN) $(SASS_OUTPUT_FILE); \
-	if [ $$? -eq 0 ] ; then \
-		$(MSG_SUCCESS) "Building new css file succeeded. Removing old css file"; \
-		rm .$(SASS_OUTPUT_FILE)_old; \
+
+# Recovering or deleting back-up file 
+	@if [ $$? -eq 0 ] ; then \
+		$(MSG_SUCCESS) "Building new css file successful."; \
+		if [ -f $(dir $(SASS_OUTPUT_FILE)).$(notdir $(SASS_OUTPUT_FILE))_old ] ; then \
+			$(MSG) "Removing old css file ($(dir $(SASS_OUTPUT_FILE)).$(notdir $(SASS_OUTPUT_FILE))_old)"; \
+			rm $(dir $(SASS_OUTPUT_FILE)).$(notdir $(SASS_OUTPUT_FILE))_old; \
+		fi; \
 	else \
-		$(MSG_ERROR) "Building new css file failed, restoring old css file"; \
-		mv .$(SASS_OUTPUT_FILE)_old $(SASS_OUTPUT_FILE); \
-		exit 1;\
+		if [ -f $(dir $(SASS_OUTPUT_FILE)).$(notdir $(SASS_OUTPUT_FILE))_old] ; then \
+			$(MSG_ERROR) "Building new css file failed, restoring old css file"; \
+			mv $(dir $(SASS_OUTPUT_FILE)).$(notdir $(SASS_OUTPUT_FILE))_old $(SASS_OUTPUT_FILE); \
+		fi; \
+		exit 1; \
 	fi
+# /$(SASS_OUTPUT_FILE)
+
 
 # Admin & Clean-up
 
