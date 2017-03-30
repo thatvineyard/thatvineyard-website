@@ -80,27 +80,32 @@ div {
     &.color-bg-secondary {
 	background-color: $color-bg-secondary;
     }
-    &.color-bg-tertiary {
-	background-color: $color-bg-tertiary;
+    & .color-bg-tertiary {
+          background-color: $color-bg-tertiary;
     }
 }
-p, h1, h2, h3 {
-    .color-fg-primary {
-	color: $color-fg-primary;
-    }
 
-    .color-fg-secondary {
-	color: $color-fg-secondary;
-    }
+p, h1, h2, h3 {
+  color: $color-fg-primary;
+  &.color-fg-primary {
+    color: $color-fg-primary;
+  }
+  &.color-fg-secondary {
+    color: $color-fg-secondary;
+  }
+  &.color-fg-tertiary {
+    color: $color-fg-tertiary-lightest;	
+  }
 }
 
 //-------//
 // Fonts //
 //-------//
   
-// Font one: Archivo Black.
+// Font one: Archivo Black and Narrow.
 // Google font. Wide. 
 @import url("https://fonts.googleapis.com/css?family=Archivo+Black");
+@import url("https://fonts.googleapis.com/css?family=Archivo+Narrow");
 $font-one: 'Archivo Black';
 $font-one-variant: 'Archivo Narrow';
 
@@ -112,6 +117,11 @@ $font-two: 'Roboto';
 
 // Font declarations
 $font-title: $font-one + ", sans-serif";
+$font-style-title: italic;
+
+$font-subtitle: $font-one-variant + ", sans-serif";
+$font-style-subtitle: italic;
+
 $font-header: $font-one-variant + ", sans-serif";
 // $font-header-variant: $font-one + ", sans-serif";
 $font-body: $font-two + ", sans-serif";

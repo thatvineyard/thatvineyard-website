@@ -17,10 +17,14 @@ p {
 }
 
 .stack {
-    position: relative;
+       height: 100%;
+       width: 100%;
+       position: relative;
 }
 
 .stack-object {
+	      height: 100%;
+	      width: 100%;
     position: absolute;
     top: 0;
 }
