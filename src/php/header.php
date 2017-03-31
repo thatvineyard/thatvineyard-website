@@ -5,10 +5,13 @@ include("nav-bar.php");
 
 function generate_header() {
 
-    $background_image_url = "https://s3-eu-west-1.amazonaws.com/video.gallereplay.com/artistarea/Man%20sits%20in%20armchair%20smoking_7d399695-3a2a-4729-9046-ae4623d30690/Cinemagraph_plain/1920x1080/cinemagraph.jpg";
-    
+    $background_image_url_1 = "https://s3-eu-west-1.amazonaws.com/video.gallereplay.com/artistarea/Man%20sits%20in%20armchair%20smoking_7d399695-3a2a-4729-9046-ae4623d30690/Cinemagraph_plain/1920x1080/cinemagraph.jpg";
+    $background_image_url_2 = "http://i.imgur.com/gzVWqDD.jpg";
+
+    $background_image_url = $background_image_url_2;
+
     div_open_background_image("header-background", "", $background_image_url);
-    
+
     div_open_and_close_empty("", "vspacer-1");
 
     generate_nav_bar();
