@@ -1,3 +1,5 @@
+$outer-padding: 10%;
+
 .centered {
     margin: auto;
 }
@@ -23,8 +25,9 @@ p {
 }
 
 .stack-object {
-	      height: 100%;
-	      width: 100%;
-    position: absolute;
-    top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
 }
+
