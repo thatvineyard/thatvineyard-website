@@ -28,7 +28,22 @@ function div_open_background_image($id, $class, $image_url) {
     echo "\r\n";
 }
 
-    
+
+function div_open_style($id, $class, $style) {
+    echo '<div ';
+    if (! empty($id)) {
+        echo 'id="'. $id . '"';
+    }
+    if (! empty($class)) {
+        echo 'class="' . $class . '"';
+    }
+    if (! empty($style)) {
+        echo 'style="' . $style . '"';
+    }
+    echo '>';
+    echo "\r\n";
+}
+
 function div_open($id, $class) {
     echo '<div ';
     if (! empty($id)) {
@@ -81,5 +96,6 @@ function div_close_clickable($id, $class) {
     echo '</a>';
     echo "\r\n";
 }
+
 
 ?>
