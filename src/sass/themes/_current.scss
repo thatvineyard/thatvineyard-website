@@ -9,14 +9,14 @@ $color-fg-primary-dark: #d41e11;        // 45%
 $color-fg-primary-darker: #a5180d;      // 35%
 $color-fg-primary-darkest: 2f0704;      // 10%
 
-$color-fg-secondary: #BE1E2D;   // Bloodshot red
+// Bloodshot red
+$color-fg-secondary: #BE1E2D;   
 $color-fg-secondary-light: #f04e42;	// 60%
 $color-fg-secondary-lighter: #f47a71;	// 70%
 $color-fg-secondary-lightest: #fbd3d0;	// 90%
 $color-fg-secondary-dark: #d41e11;        // 45%
 $color-fg-secondary-darker: #a5180d;      // 35%
 $color-fg-secondary-darkest: 2f0704;      // 10%
-
 
 // Turmeric yellow
 $color-fg-tertiary: #e0a021;          // 50%
@@ -27,7 +27,15 @@ $color-fg-tertiary-dark: #b38019;     // 40%
 $color-fg-tertiary-darker: #705010;   // 25%
 $color-fg-tertiary-darkest: #2d2006;  // 10%
 
-$color-fg-quatrenary: #d7d788;  // Sanstone yellow
+// Sanstone yellow
+$color-fg-quatrenary: #d7d788;          // 70%
+$color-fg-quatrenary-light: #dfdf9f;    // 75%
+$color-fg-quatrenary-lighter: #e6e6b3;  // 80%
+$color-fg-quatrenary-lightest: #f9f9ec; // 95%
+$color-fg-quatrenary-dark: #d7d788;     // 45%
+$color-fg-quatrenary-darker: #606020;   // 25%
+$color-fg-quatrenary-darkest: #393913;  // 15%
+
 // Steel blue
 $color-fg-quinary: #145366;           // 24%
 $color-fg-quinary-light: #1d7995;     // 35%
